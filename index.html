@@ -1,115 +1,424 @@
-<!doctype html>
-<html lang="en">
-  <head>
-  	<title>Carousel 02</title>
+<!DOCTYPE html>
+<html>
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
-		
-		<link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.6/css/ionicons.min.css">
-		<link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-		
-		<section class="ftco-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h2 class="heading-section mb-5 pb-md-4">Carousel #02</h2>
-					</div>
-					<div class="col-md-12">
-						<div class="featured-carousel owl-carousel">
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-1.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 01</a></h3>
-										<span>Web Design</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-2.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 02</a></h3>
-										<span>Web Design</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-3.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 03</a></h3>
-										<span>Web Design</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-4.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 04</a></h3>
-										<span>Web Design</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-5.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 05</a></h3>
-										<span>Web Design</span>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="work">
-									<div class="img d-flex align-items-center justify-content-center rounded" style="background-image: url(images/work-6.jpg);">
-										<a href="#" class="icon d-flex align-items-center justify-content-center">
-											<span class="ion-ios-search"></span>
-										</a>
-									</div>
-									<div class="text pt-3 w-100 text-center">
-										<h3><a href="#">Work 06</a></h3>
-										<span>Web Design</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+
+        <nav class="navbar navbar-expand-md navbar-light" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Expand at md</a> -->
+                <img src="/assets/images/agt-logo.png" width="100px" height="70px" alt="" />
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active fs-6" aria-current="page" href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fs-6" href="#">
+                                Product Categories
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fs-6" href="#">
+                                Bundles
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fs-6" href="#">
+                                About AGT
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fs-6" href="#">
+                                Our Partners
+                            </a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link fs-6" href="#">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- <form role="search">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                </form> -->
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" width="100%" height="650px" xmlns="http://www.w3.org/2000/img"
+                    src="/assets//images/slide1.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                <rect width="100%" height="100%" fill="#777" /></img>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <p class="carousel-caption-title">The Cleaning Assistant with an IQ</p>
+                        <p class="carousel-caption-subtitle">Powerful Robotic Suction delivers optimal cleaning results.
+                            Remotely select the rooms to clean with your smartphone and the rest is history!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" width="100%" height="650px" xmlns="http://www.w3.org/2000/img"
+                    src="/assets//images/slide2.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                <rect width="100%" height="100%" fill="#777" /></img>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <p class="carousel-caption-title">Power your home with Google Home</p>
+                        <p class="carousel-caption-subtitle">Control your smart home with Google Assistant. Ask it
+                            questions. Tell it to do things. Always ready to help whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active">
+                <img class="bd-placeholder-img" width="100%" height="650px" xmlns="http://www.w3.org/2000/img"
+                    src="/assets//images/slide3.jpg" aria-hidden="true" preserveAspectRatio="xMidYMid slice"
+                    focusable="false">
+                <rect width="100%" height="100%" fill="#777" /></img>
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <p class="carousel-caption-title">AGT state-of-the-art Smart Appliances</p>
+                        <p class="carousel-caption-subtitle">Let the smart appliances take care of the household chores
+                            while you focus on other things. So take a seat, unwind, and enjoy.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <section class="categories">
+        <div class="categories-header text-center">
+            <p> Categories </p>
+        </div>
+
+        <div class="categories-grid">
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/security-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/green-plug-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/lighting-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/health-safety-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+        </div>
+        <div class="categories-grid">
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/smart-appliances-hex@2x (1).png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/entertainment-outdoor-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/video-wall-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/smart-appliances-hex@2x (2).png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+        </div>
+        <div class="categories-grid">
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/smart-appliances-hex@2x (1).png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+            <div class="categories-card">
+                <div class="categories-img">
+                    <img src="assets/images/entertainment-outdoor-hex@2x.png" />
+                </div>
+                <p class="mt-3 categories-title">Security</p>
+                <p> Keep your eyes on what matters</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="plans row">
+        <div class="text-center">
+            <p class="plans-header"> Choose a plan </p>
+        </div>
+        <div class="col-md-6 plans-grid">
+            <div class="plans-card1">
+                <div class="plans-card-text">
+                    <p class="plans-card-title">
+                        Smart Home
+                    </p>
+                    <p>
+                        Our smart home automation solutions offer an unparalleled user experience from a single
+                        intuitive app or user interface with effortless cont...
+                    </p>
+                    <button class="plans-card-btn">
+                        More
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 plans-grid">
+            <div class="plans-card2">
+                <div class="plans-card-text">
+                    <p class="plans-card-title">
+                        Smart Office
+                    </p> 
+                    <p>
+                        Our smart office and commercial audio video solutions are geared towards fostering effective communication, collaboration, cost saving, safe...
+                    </p>
+                    <button class="plans-card-btn">
+                        More
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="brands">
+        <div class="text-center">
+            <p class="brands-header"> Our Brands </p>
+            <p>
+                To deliver cutting-edge solutions, we've partnered with the best.
+            </p>
+        </div>
+
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="assets/images/amazon-alexa.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners26.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners25.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners24.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners262.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners23.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners22.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners21.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners16.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners18.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners19.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners15.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners17.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners14.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners13.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners9.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners8.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners7.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners5.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners11.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners3.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners12.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners1.png" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/netgear.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/ring.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/samsung.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/sonos.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/somfy.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/bose.jpg" height="150" width="200"
+                        alt="" />
+                </div>
+                <div class="slide">
+                    <img src="assets/images/Partners261.png" height="150" width="200"
+                        alt="" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script src="" async defer></script>
+</body>
+
 </html>
